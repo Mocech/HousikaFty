@@ -1,0 +1,78 @@
+body {
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.alert {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reset-password-container {
+    background-color: #fff; /* White background for the container */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.reset-password-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reset-password-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.reset-password-container input[type="email"],
+.reset-password-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.reset-password-container input[type="email"]:focus,
+.reset-password-container input[type="password"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.reset-password-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #D4B19C; /* Light brown button color */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-password-container input[type="submit"]:hover {
+    background-color: #b38d6f; /* Darker light brown on hover */
+}
+
+.reset-password-container input[type="email"]::placeholder,
+.reset-password-container input[type="password"]::placeholder {
+    color: #aaa;
+}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load socialaccount %}
+{% load static %}
+
+{% block extrastyle %}
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock extrastyle %}
+
+
+
+
+{% block content %}
+        
+    <div class="modal">
+        <button class="close-button">×</button>
+        
+        <div class="logo">
+            <img src="your-logo.png" alt="Logo">
+        </div>
+        
+        <h1>Welcome</h1>
+        <p class="subtitle">Find Your Dream House here</p>
+        
+        <form id="signupForm" method="POST">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" id="phone_number" name="phone_number" class="form-control" placeholder="Enter your phone number">
+            </div>
+        
+            <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" id="password1" name="password1" class="form-control" placeholder="Enter your password" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" name="password2" class="form-control" placeholder="Confirm your password" required>
+            </div>
+        
+            <button type="submit" class="continue-btn">Continue</button>
+        </form>
+    <div class="divider">OR</div>
+    
+    <button class="google-btn">
+        <img src="https://www.google.com/favicon.ico" alt="Google">
+        Continue with Google
+    </button>
+    
+    <p class="terms">
+        By continuing, you agree to our <a href="#">Terms of Service</a> and acknowledge our <a href="#">Privacy Policy</a>
+    </p>
+</div>
+
+
+    
+{% endblock content %}
+
+

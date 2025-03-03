@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page</title>
+    
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJk3v1Xw2y2nD/qw5xPbZ0f/wnZ9QO/IEdUpdfPb36Ohd0nRVyewG9wct5Rl" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1>Homepage</h1>
+
+   
+    <nav>
+        <!-- Other navigation items -->
+        <form action="{% url 'logout' %}" method="post" class="d-inline">
+            {% csrf_token %}
+            <a type="button" href="{% url 'login' %}">Login</a>
+            <a type="button" href="{% url 'register' %}">Register</a>
+            <button type="submit" class="btn btn-danger">Logout</button>
+        </form>
+    </nav>
+
+    <!-- Include Bootstrap JS (for interactive elements like dropdowns, modals, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybU7r7G0H4hlvY9tzoIKDkBvA1x6kR8mQyWwFwi8u1t8swD8p9" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0gX7Xr0h5srybs74tV43twhk+d0ExbfsH2bT5I0aK5oQ7r9H" crossorigin="anonymous"></script>
+
+</body>
+</html>

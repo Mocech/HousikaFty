@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.login-container {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    width: 400px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #5f5f5f;
+    padding: 8px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.logo i {
+    font-size: 32px;
+    color: #e60023;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: rgb(51, 51, 51);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    height: 35px;
+    
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0074e8;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.forgot-password {
+    text-align: right;
+    margin: 8px 0 16px;
+}
+
+.forgot-password a {
+    color: #0074e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 24px;
+    background-color: #e60023;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.divider {
+    text-align: center;
+    margin: 16px 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.divider span {
+    background-color: white;
+    padding: 0 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn {
+    border-color: #ddd;
+}
+
+/* .google-btn:hover {
+    background-color: #ddd;
+   
+} */
+.google-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.facebook-btn i {
+    color: #1877f2;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.signup-link {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-link a {
+    color: #0074e8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.terms {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 16px;
+}
+h2 {
+    color: blue; /* Set text color to blue */
+    font-family: monospace; /* Use monospace font for a typing effect */
+    overflow: hidden; /* Hide overflow to create the typing effect */
+    border-right: .15em solid blue; /* Add a cursor effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin: 0 auto; /* Center the text */
+    letter-spacing: .15em; /* Add spacing between letters */
+    animation: 
+        typing 4s steps(40, end) infinite, /* Typing animation with infinite loop */
+        blink-caret .75s step-end infinite; /* Cursor blink animation */
+    animation-delay: 3s; /* Delay before the animation starts again */
+}
+
+/* Typing effect */
+@keyframes typing {
+    from { width: 0; } /* Start with no width */
+    to { width: 100%; } /* Expand to full width */
+}
+
+/* Cursor blink effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; } /* Hide cursor */
+    50% { border-color: blue; } /* Show cursor */
+}
